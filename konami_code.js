@@ -8,9 +8,8 @@ function onKeyDownHandler(e) {
 }
 
 function init() {
-  document.body.addEventListener('keydown')
-
-  const e = parseInt(e.detail || e.which);
+  document.body.addEventListener('keydown', event => {
+    const e = parseInt(e.detail || e.which);
 
   if (e === code[index]) {
     index++;
@@ -23,4 +22,5 @@ function init() {
   } else {
     index = 0;
   }
+  })
 }
