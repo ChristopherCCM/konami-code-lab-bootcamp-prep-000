@@ -9,7 +9,7 @@ function onKeyDownHandler(e) {
 
 function init() {
   document.body.addEventListener('keydown', (event) => {
-
+    onKeyDownHandler(event);
   })
 
   if (keyName === code[index]) {
