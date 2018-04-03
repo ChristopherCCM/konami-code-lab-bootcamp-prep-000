@@ -18,4 +18,5 @@ function init(keyPress) {
     }
   } else {
     index = 0;
+  }
 }
