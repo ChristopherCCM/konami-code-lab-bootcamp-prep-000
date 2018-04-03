@@ -12,7 +12,6 @@ function init() {
 
     if (index === code.length) {
       alert("You've cracked the code!");
-
       index = 0;
     }
   } else {
