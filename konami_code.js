@@ -13,6 +13,7 @@ function init() {
 
   if (e === code[index]) {
     index++;
+    console.log(index);
 
     if (index === code.length) {
       alert("You've cracked the code!");
@@ -21,6 +22,7 @@ function init() {
     }
   } else {
     index = 0;
+    console.log(index);
   }
   })
 }
