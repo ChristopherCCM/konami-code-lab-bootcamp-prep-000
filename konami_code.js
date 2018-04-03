@@ -3,8 +3,10 @@ const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 let index = 0;
 
 function init(keyPress) {
-  const body = document.body.querySelector('body')
-  const key = parseInt(keyPress.detail || keyPress.which);
+
+  document.body.addEventListener('keydown', (event) => {
+    const keyName = parseInt(keyPress.detail || keyPress.which);
+  })
 
   if (key === code[index]) {
     index++;
@@ -16,5 +18,4 @@ function init(keyPress) {
     }
   } else {
     index = 0;
-  }
 }
